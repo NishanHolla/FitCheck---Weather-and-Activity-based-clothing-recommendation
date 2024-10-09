@@ -1,0 +1,155 @@
+{
+  "temperature": {
+    "very_cold": {
+      "range": "< 10",
+      "recommendations": [
+        "heavy winter clothing like coats, sweaters, gloves, scarves, and boots"
+      ]
+    },
+    "cold": {
+      "range": "10 - 20",
+      "recommendations": [
+        "light jackets or layering with sweaters"
+      ]
+    },
+    "mild": {
+      "range": "20 - 30",
+      "recommendations": [
+        "light clothing like t-shirts and jeans"
+      ]
+    },
+    "hot": {
+      "range": "> 30",
+      "recommendations": [
+        "summer clothing like shorts, t-shirts, and sandals",
+        "sunscreen to protect from UV rays",
+        "carry extra water to stay hydrated"
+      ]
+    }
+  },
+  "humidity": {
+    "high": {
+      "range": "> 70%",
+      "recommendations": [
+        "wear breathable fabrics like cotton or linen",
+        "carry a towel to manage sweat"
+      ]
+    },
+    "low": {
+      "range": "< 30%",
+      "recommendations": [
+        "wear moisture-retaining fabrics like wool",
+        "use a good moisturizer to prevent dry skin"
+      ]
+    }
+  },
+  "rainfall": {
+    "rain_detected": {
+      "range": "> 0 mm",
+      "recommendations": [
+        "bring waterproof jackets or raincoats, and carry an umbrella",
+        "consider wearing waterproof shoes"
+      ]
+    },
+    "no_rain": {
+      "range": "0 mm",
+      "recommendations": [
+        "No need for rain gear"
+      ]
+    }
+  },
+  "terrain_based_recommendations": {
+    "mountainous_and_cold_regions": {
+      "cities": ["Leh", "Shimla", "Manali", "Nainital", "Mussoorie", "Srinagar"],
+      "temperature": "very_cold",
+      "rainfall": "rain_detected",
+      "recommendations": [
+        "heavy winter clothing like coats, sweaters, gloves, scarves, and boots",
+        "bring waterproof jackets or raincoats, and carry an umbrella"
+      ]
+    },
+    "coastal_and_humid_regions": {
+      "cities": ["Mumbai", "Chennai", "Goa", "Kochi", "Visakhapatnam", "Mangalore"],
+      "temperature": ["mild", "hot"],
+      "humidity": "high",
+      "rainfall": "rain_detected",
+      "recommendations": [
+        "light clothing like t-shirts and jeans",
+        "summer clothing like shorts, t-shirts, and sandals",
+        "wear breathable fabrics like cotton or linen",
+        "bring waterproof jackets or raincoats, and carry an umbrella",
+        "apply sunscreen to protect from the sun",
+        "carry extra clothes if swimming or getting wet"
+      ]
+    },
+    "plains_with_extreme_heat": {
+      "cities": ["Delhi", "Jaipur", "Ahmedabad", "Lucknow", "Bhopal"],
+      "temperature": "hot",
+      "humidity": "low",
+      "rainfall": "rain_detected",
+      "recommendations": [
+        "summer clothing like shorts, t-shirts, and sandals",
+        "wear moisture-retaining fabrics like wool",
+        "bring waterproof jackets or raincoats",
+        "apply sunscreen",
+        "carry extra water and wear a hat to stay cool"
+      ]
+    },
+    "desert_regions": {
+      "cities": ["Jaisalmer", "Bikaner", "Barmer"],
+      "temperature": "hot",
+      "humidity": "low",
+      "rainfall": "no_rain",
+      "recommendations": [
+        "summer clothing like shorts, t-shirts, and sandals",
+        "wear moisture-retaining fabrics like wool",
+        "no need for rain gear",
+        "use sunscreen and a hat to protect from sun exposure",
+        "carry extra water to stay hydrated"
+      ]
+    },
+    "tropical_wet_regions": {
+      "cities": ["Meghalaya", "Assam", "Darjeeling", "Sikkim"],
+      "temperature": "mild",
+      "rainfall": "rain_detected",
+      "recommendations": [
+        "light clothing like t-shirts and jeans",
+        "bring waterproof jackets or raincoats, and carry an umbrella",
+        "carry an extra pair of shoes or clothes if hiking"
+      ]
+    }
+  },
+  "activities": {
+    "swimming": {
+      "recommendations": [
+        "swimwear, goggles, waterproof sandals",
+        "carry an extra pair of clothes after swimming"
+      ]
+    },
+    "running": {
+      "recommendations": [
+        "running shoes, breathable athletic wear",
+        "sunscreen if running outdoors in sunny conditions",
+        "carry extra water to stay hydrated"
+      ]
+    },
+    "climbing": {
+      "recommendations": [
+        "climbing shoes, flexible clothing, gloves",
+        "carry a light backpack with extra clothes or gear"
+      ]
+    },
+    "hiking": {
+      "recommendations": [
+        "hiking boots, weather-appropriate clothing, backpack",
+        "sunscreen, hat, and water if hiking in sunny areas"
+      ]
+    },
+    "cycling": {
+      "recommendations": [
+        "cycling shorts, breathable top, helmet",
+        "sunscreen and extra water for long rides"
+      ]
+    }
+  }
+}
