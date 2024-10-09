@@ -4,6 +4,8 @@
 
 This system gives you clothing and gear recommendations based on your travel destination, the weather at that location, and the activities you’ll be doing. It processes your input, gets weather data, and then provides suggestions based on predefined rules.
 
+![image](https://github.com/user-attachments/assets/926caba1-0f90-446c-a1d1-765e313c21a3)
+
 ## How the System Works:
 
 ### User Input:
